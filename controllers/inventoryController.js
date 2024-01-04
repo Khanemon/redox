@@ -190,15 +190,10 @@ const getDonarsController = async (req, res) => {
 
 const getHospitalController = async (req, res) => {
   try {
-    const organisation = req.body.userId;
-    //GET HOSPITAL ID
-    const hospitalId = await inventoryModel.distinct("hospital", {
-      organisation,
-    });
     //FIND HOSPITAL
     const hospitals = await userModel.find({
-      _id: { $in: hospitalId },
-    });
+      role: "hospital",
+    }).select("hospitalName email phone website");
     return res.status(200).send({
       success: true,
       message: "Hospitals Data Fetched Successfully",
@@ -217,12 +212,15 @@ const getHospitalController = async (req, res) => {
 // GET ORG PROFILES
 const getOrgnaisationController = async (req, res) => {
   try {
-    const donar = req.body.userId;
-    const orgId = await inventoryModel.distinct("organisation", { donar });
-    //find org
+    // const donar = req.body.userId;
+    // const orgId = await inventoryModel.distinct("organisation", { donar });
+    // //find org
+    // const organisations = await userModel.find({
+    //   _id: { $in: orgId },
+    // });
     const organisations = await userModel.find({
-      _id: { $in: orgId },
-    });
+      role: "organisation"
+    }).select('_id organisationName email phone')
     return res.status(200).send({
       success: true,
       message: "Org Data Fetched Successfully",

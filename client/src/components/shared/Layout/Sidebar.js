@@ -91,11 +91,11 @@ const Sidebar = () => {
           {user?.role === "donar" && (
             <div
               className={`menu-item ${
-                location.pathname === "/donation" && "active"
+                location.pathname === "/hospital" && "active"
               }`}
             >
               <i className="fa-sharp fa-solid fa-building-ngo"></i>
-              <Link to="/donation">Donation</Link>
+              <Link to="/hospital">Hospitals</Link>
             </div>
           )}
 

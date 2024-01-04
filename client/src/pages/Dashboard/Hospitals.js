@@ -24,28 +24,20 @@ const Hospitals = () => {
 
   return (
     <Layout>
-      <table className="table ">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Phone</th>
-            <th scope="col">Address</th>
-            <th scope="col">Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data?.map((record) => (
-            <tr key={record._id}>
-              <td>{record.hospitalName}</td>
-              <td>{record.email}</td>
-              <td>{record.phone}</td>
-              <td>{record.address}</td>
-              <td>{moment(record.createdAt).format("DD/MM/YYYY hh:mm A")}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="row">
+        {data?.map((record) => (
+          <div className="col-4">
+            <div className="card" style={{ width: "18rem" }}>
+              <div key={record._id} className="card-body">
+                <a href={record.website}><h5 className="card-title">{record.hospitalName}</h5></a>
+                <h6 className="card-subtitle mb-2 text-muted">{record.email}</h6>
+                <p className="card-text">{record.phone}</p>
+                <a href={record.website}>{record.website}</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 };
