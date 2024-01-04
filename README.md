@@ -1,14 +1,23 @@
-# Blood-Bank-Mern-Stack-Project
-complete mern stack blood bank project source code please check commits
+# Getting Started with MERN
 
-## project playlist 🎞
-https://youtube.com/playlist?list=PLuHGmgpyHfRzs3VmqXkguFuNknQFbT0db
+This project was created base on MVC pattern
 
-# Thank you for watching TechinfoYT youtube channel
-😎 Please Like Share and Subscribe ! 🙏
+## Run Project
 
-# Having Any Isuse Or Query DM On Instagram 🤷‍♀️
-https://www.instagram.com/technical_update/
+For run the project you have to do the following steps
 
+### (i) clone the git from the reposetory `git clone url`
 
+### (ii) install all packges `npm i`
 
+### (iii) run the file by type `npm run dev`
+
+## Available Scripts
+
+Runs the app in the development mode.\
+Open [http://localhost:5050](http://localhost:5050) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
