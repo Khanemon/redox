@@ -635,6 +635,12 @@ textarea{
 
 /* footer section ends here */
 
+/* Blood donation */
+.banner__image{
+    height: 70%;
+    width: 70%;
+}
+
 /* responsiveness starts here*/
 @media screen and (max-width: 992px) {
     .banner{
