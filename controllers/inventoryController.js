@@ -165,13 +165,7 @@ const getRecentInventoryController = async (req, res) => {
 // GET DONAR REOCRDS
 const getDonarsController = async (req, res) => {
   try {
-    const organisation = req.body.userId;
-    //find donars
-    const donorId = await inventoryModel.distinct("donar", {
-      organisation,
-    });
-    // console.log(donorId);
-    const donars = await userModel.find({ _id: { $in: donorId } });
+    const donars = await userModel.find({role: 'donar'});
 
     return res.status(200).send({
       success: true,

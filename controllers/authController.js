@@ -100,4 +100,27 @@ const currentUserController = async (req, res) => {
   }
 };
 
-module.exports = { registerController, loginController, currentUserController };
+//POST CURRENT USER
+const updateCurrentUserController = async (req, res) => {
+  try {
+    const user = await userModel.findOneAndUpdate({ _id: req.body.userId }, {
+      name: req.body.name,
+      phone: req.body.phone,
+      bloodGroup: req.body.bloodGroup,
+    }, {new: true});
+    return res.status(200).send({
+      success: true,
+      message: "User Updated Successfully",
+      user,
+    });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send({
+      success: false,
+      message: "unable to update current user",
+      error,
+    });
+  }
+};
+
+module.exports = { registerController, loginController, currentUserController, updateCurrentUserController };

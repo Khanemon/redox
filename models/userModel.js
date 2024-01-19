@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema(
         return false;
       },
     },
+    bloodGroup: {
+      type: String,
+      enum: ["O+", "O-", "AB+", "AB-", "A+", "A-", "B+", "B-"],
+    },
     organisationName: {
       type: String,
       required: function () {
