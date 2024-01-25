@@ -429,7 +429,8 @@ header{
     overflow: hidden;
 }
 /* ################# Blood Alternative Ends Here #######################-*/
-/* banner section starts here  */
+
+/* =============================== banner section starts here ======================================== */
 
 .banner{
     padding: 5rem 1rem;
@@ -455,6 +456,30 @@ header{
     font-size: 4rem;
 
 }
+.banne__card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.ban__card{
+    flex: 1; /*every one take same space */
+    border-radius: 10px;
+    background-color: #419b96;
+    color: white;
+    padding: 15px 10px;
+    margin: 15px;
+    gap: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 280px;
+    transition: var(--transition);
+}
+.ban__card:hover{
+    transform: var(--scale);
+}
+
 .banner__decription{
     font-size: 1.8rem;
 }
@@ -463,11 +488,16 @@ header{
     height: 55rem;
     border: 0.3rem solid;
 }
-/* banner section ends here  */
+/* ====================================== banner section ends here ===================================== */
 
 
 /* archieves section starts here */
-
+#blog-banner-section{
+    background-image: url("../Images/donation-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .archieves-container{
     display: flex;
     justify-content: space-evenly;

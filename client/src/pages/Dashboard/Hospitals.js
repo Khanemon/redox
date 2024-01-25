@@ -28,8 +28,8 @@ const Hospitals = () => {
         {data?.map((record) => (
           <div className="col-4">
             <div
-              className="card bg-warning text-white"
-              style={{ width: "18rem" }}
+              className="card text-white"
+              style={{ width: "18rem", backgroundColor: "#c4161c" }}
             >
               <div key={record._id} className="card-body">
                 <a className="text-decoration-none" href={record.website}>

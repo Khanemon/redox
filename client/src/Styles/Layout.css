@@ -1,7 +1,7 @@
 .sidebar {
   height: 100vh !important;
   width: 80% !important;
-  background-color: #c4161c;
+  background-color: #419b96;
   box-shadow: 0 0 2px gray;
   color: white;
 }
@@ -27,7 +27,7 @@
 }
 
 .active {
-  background-color: #419b96;
+  background-color: #ed1c24;
   padding: 10px;
   margin-top: 25px;
 }

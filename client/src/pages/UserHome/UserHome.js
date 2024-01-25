@@ -41,7 +41,7 @@ const UserHome = () => {
                 </a>
               </li>
               <li>
-                <a href="#gallery" className="nav__link">
+                <a href="#blog-banner-section" className="nav__link">
                   Gallery
                 </a>
               </li>
@@ -69,10 +69,10 @@ const UserHome = () => {
         <div id="slider-go" className="slider-detail">
           <h1 className="slider__heading">Donate Blood &amp; Save life</h1>
           <h3 className="slider__details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            officia, omnis, nisi recusandae dolore ducimus deserunt amet
-            deleniti nam id modi optio labore vel excepturi minus corrupti
-            ipsam, cupiditate provident.
+            Welcome to our community at RED OXYGEN. We're delighted you're here.
+            Your presence adds value to our shared commitment. Explore our
+            platform, where every click represents a step towards positive
+            change. Create a account on our website and be a part of our family.
           </h3>
           <div className="slider__btn">
             <button className="slbtn__design btn1">Donate Now</button>
@@ -87,8 +87,8 @@ const UserHome = () => {
           <div className="about__sec">
             <h2 className="abo-us__heading">About Us</h2>
             <h3 className="abo-us__details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              praesentium ab sunt quisquam quasi. Veniam nobis?
+              RED OXYGEN is an automated blood service that connects blood
+              searchers with voluntary blood donors.
             </h3>
           </div>
 
@@ -96,38 +96,40 @@ const UserHome = () => {
             <div>
               <h2 className="donar__heading">About Blood Doners</h2>
               <p className="doner__details">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                reiciendis atque voluptates nemo odio numquam tempora,
-                doloremque sint ipsa est ullam, repellat, architecto fugit
-                recusandae totam minima autem dolorem ducimus. Voluptate atque
-                obcaecati odit officiis facere, praesentium consectetur non
-                ducimus quibusdam magnam tempore, reiciendis velit. Distinctio
-                incidunt porro, rerum ratione voluptatum reiciendis velit.
-                Distinctio incidunt porro, rerum ratione voluptatum.
+                Blood donors play a pivotal role in the healthcare system,
+                contributing to the well-being and survival of countless
+                individuals in need. These selfless individuals voluntarily give
+                the gift of life by donating their blood, a precious resource
+                that cannot be manufactured. Each donation has the potential to
+                save lives during emergencies, surgeries, and treatments for
+                various medical conditions. The act of donating blood is a
+                simple yet profound way for individuals to make a direct and
+                immediate impact on the health and recovery of others within
+                their community.
               </p>
               <p className="doner__details">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                reiciendis atque voluptates nemo odio numquam tempora,
-                doloremque sint ipsa est ullam, repellat, architecto fugit
-                obcaecati odit officiis facere, praesentium.
+                The significance of blood donors becomes particularly evident in
+                times of crisis or disasters when the demand for blood may
+                surge. Their commitment ensures that hospitals and medical
+                facilities have an adequate and readily available supply of
+                blood products to meet the urgent needs of patients. Beyond
+                emergencies, regular blood donations contribute to the
+                maintenance of a stable blood supply, supporting ongoing medical
+                treatments for chronic conditions and routine surgical
+                procedures. The generosity of blood donors fosters a sense of
+                community and collective responsibility, as they come together
+                to provide a lifeline for those facing health challenges.
               </p>
               <p className="doner__details">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                doloremque sint ipsa est ullam, repellat, architecto fugit
-                recusandae totam minima autem dolorem ducimus. Voluptate atque
-                obcaecati odit officiis facere, praesentium consectetur non
-                ducimus quibusdam magnam tempore, reiciendis velit. Distinctio
-                incidunt porro, rerum ratione voluptatum omnisreiciendis velit.
-                Distinctio incidunt porro, rerum ratione voluptatum.
-              </p>
-              <p className="doner__details">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                doloremque sint ipsa est ullam, repellat, architecto fugit
-                recusandae totam minima autem dolorem ducimus. Voluptate atque
-                obcaecati odit officiis facere, praesentium consectetur non
-                ducimus quibusdam magnam tempore, reiciendis velit. Distinctio
-                incidunt porro, rerum ratione voluptatum omnis corrupti fugit
-                facere aut debitis, ad minus itaque aspernatur.
+                Being a blood donor is not just about the act of giving; it is a
+                commitment to the well-being of others and a demonstration of
+                compassion and solidarity. Blood donors embody the spirit of
+                altruism, showcasing how individual actions can collectively
+                make a profound impact on the health and vitality of a
+                community. Their dedication to saving lives creates a ripple
+                effect of positivity and underscores the powerful role that
+                individuals can play in contributing to the greater good of
+                society.
               </p>
             </div>
             <img src={about_img} alt="about-img" />
@@ -261,22 +263,55 @@ const UserHome = () => {
         <main>
           {/* blog-banner section starts here */}
           <section id="blog-banner-section" className="banner">
-            <article>
-              <h1 className="banner__heading">Blood Donation</h1>
-              <p className="banner__decription text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                voluptate aperiam atque velit nisi vero placeat sapiente iusto
-                impedit at ea delectus, voluptatibus quibusdam architecto iure
-                ipsa laborum maxime corrupti.
-              </p>
-            </article>
-            <aside>
-              <img
-                className="banner__image"
-                src={blog1}
-                alt="Cover_photo_not_find"
-              />
-            </aside>
+            <div>
+              <h1 className="banner__heading">Blood Donation Prccess</h1>
+              <div className="banne__card">
+                <div className="card1 ban__card">
+                  <h3>Registration</h3>
+                  <p>
+                    Donors begin by registering at a blood donation center or a
+                    mobile blood drive. This typically involves providing
+                    identification and basic contact information.
+                  </p>
+                </div>
+                <div className="card2 ban__card">
+                  <h3>Health Screenin</h3>
+                  <p>
+                    Donors undergo a brief health screening to ensure they meet
+                    the eligibility criteria for donation. This includes
+                    assessing general health, checking hemoglobin levels, and
+                    reviewing medical history.
+                  </p>
+                </div>
+                <div className="card3 ban__card">
+                  <h3>Donation</h3>
+                  <p>
+                    The actual donation is a quick and relatively painless
+                    process. A trained phlebotomist inserts a sterile needle
+                    into a vein, usually in the arm, and collects a standard
+                    unit of blood. The donation process typically takes around
+                    10-15 minutes.
+                  </p>
+                </div>
+                <div className="card4 ban__card">
+                  <h3>Rest and Refreshments</h3>
+                  <p>
+                    After donation, donors are encouraged to rest for a short
+                    period and enjoy some refreshments. This helps ensure their
+                    well-being before leaving the donation site.
+                  </p>
+                </div>
+                <div className="card5 ban__card">
+                  <h3>Post-Donation Care</h3>
+                  <p>
+                    Donors are advised to stay hydrated and avoid strenuous
+                    physical activities for the rest of the day. It's essential
+                    to follow any specific post-donation guidelines provided by
+                    the donation center.
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
           {/* blog-banner section ends here */}
           {/* archieves section starts here */}
