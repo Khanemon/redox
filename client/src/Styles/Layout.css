@@ -1,7 +1,7 @@
 .sidebar {
   height: 100vh !important;
-  /* border-radius: 5px; */
-  background-color: #2e3200;
+  width: 80% !important;
+  background-color: #c4161c;
   box-shadow: 0 0 2px gray;
   color: white;
 }
@@ -27,15 +27,16 @@
 }
 
 .active {
-  background-color: white;
+  background-color: #419b96;
   padding: 10px;
   margin-top: 25px;
 }
 
 .active a,
 .active i {
-  color: #2e3200;
+  color: white
 }
+
 
 
 /* ================================================================

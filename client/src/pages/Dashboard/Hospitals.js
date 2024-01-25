@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../../components/shared/Layout/Layout";
 import API from "../../services/API";
-import moment from "moment";
+// import moment from "moment";
 
 const Hospitals = () => {
   const [data, setData] = useState([]);
@@ -27,12 +27,24 @@ const Hospitals = () => {
       <div className="row">
         {data?.map((record) => (
           <div className="col-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div
+              className="card bg-warning text-white"
+              style={{ width: "18rem" }}
+            >
               <div key={record._id} className="card-body">
-                <a href={record.website}><h5 className="card-title">{record.hospitalName}</h5></a>
-                <h6 className="card-subtitle mb-2 text-muted">{record.email}</h6>
+                <a className="text-decoration-none" href={record.website}>
+                  <h5 className="card-title text-white">
+                    {record.hospitalName}
+                  </h5>
+                </a>
+                <p className="card-subtitle mb-2 text-white">{record.email}</p>
                 <p className="card-text">{record.phone}</p>
-                <a href={record.website}>{record.website}</a>
+                <a
+                  className="text-black text-decoration-none fw-bold"
+                  href={record.website}
+                >
+                  {record.website}
+                </a>
               </div>
             </div>
           </div>

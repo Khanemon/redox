@@ -21,3 +21,10 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
+
+Git Update
+
+1. git status
+2. git add .
+3. git commit -m "New Commit Name"
+4. git push

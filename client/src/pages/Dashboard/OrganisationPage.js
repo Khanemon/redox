@@ -19,9 +19,7 @@ const OrganisationPage = () => {
         }
       }
       if (user?.role === "hospital") {
-        const { data } = await API.get(
-          "/inventory/get-orgnaisation-for-hospital"
-        );
+        const { data } = await API.get("/inventory/get-orgnaisation");
         //   console.log(data);
         if (data?.success) {
           setData(data?.organisations);
@@ -39,18 +37,20 @@ const OrganisationPage = () => {
   return (
     <Layout>
       <div className="row">
-            {data?.map((record) => (
-              <div className="col-4">
-                <div className="card" style={{ width: "18rem" }}>
-                  <div key={record._id} className="card-body">
-                    <h5 className="card-title">{record.organisationName}</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">{record.email}</h6>
-                    <p className="card-text">{record.phone}</p>
-                  </div>
-                </div>
+        {data?.map((record) => (
+          <div className="col-4">
+            <div className="card bg-info text-white" style={{ width: "18rem" }}>
+              <div key={record._id} className="card-body">
+                <h5 className="card-title">{record.organisationName}</h5>
+                <h6 className="card-subtitle mb-2 text-white">
+                  {record.email}
+                </h6>
+                <p className="card-text text-white">{record.phone}</p>
               </div>
-            ))}
+            </div>
           </div>
+        ))}
+      </div>
     </Layout>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { BiDonateBlood, BiUserCircle } from "react-icons/bi";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import logo from "../../../Images/logo2.png";
 const Header = () => {
   const { user } = useSelector((state) => state.auth);
   const navigate = useNavigate();
@@ -17,12 +18,16 @@ const Header = () => {
     <>
       <nav className="navbar">
         <div className="container-fluid ">
-          <div className="navbar-brand h1 ">
-            <BiDonateBlood color="red" /> Red Oxygen
+          <div className="project__logo2">
+            <div className="pro__logo2">
+              <img src={logo} alt="project-logo2" />
+            </div>
+            <h1 className="prohead__red2">RED</h1>
+            <h1 className="prohead__oxy2">OXYGEN</h1>
           </div>
           <ul className="navbar-nav flex-row">
             <li className="nav-item mx-3">
-              <Link to={'/profile'} className="nav-link">
+              <Link to={"/profile"} className="nav-link">
                 <BiUserCircle /> Welcome{" "}
                 {user?.name || user?.hospitalName || user?.organisationName}
                 &nbsp;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../../components/shared/Layout/Layout";
 import API from "../../services/API";
-import moment from "moment";
+// import moment from "moment";
 
 const Donar = () => {
   const [data, setData] = useState([]);
@@ -25,24 +25,33 @@ const Donar = () => {
   return (
     <Layout>
       <div className="row">
-          {data?.map((record) => (
-            // <tr key={record._id}>
-            //   <td>{record.name || record.organisationName + " (ORG)"}</td>
-            //   <td>{record.email}</td>
-            //   <td>{record.phone}</td>
-            //   <td>{moment(record.createdAt).format("DD/MM/YYYY hh:mm A")}</td>
-            // </tr>
-            <div className="col-4">
-            <div className="card" style={{ width: "18rem" }}>
+        {data?.map((record) => (
+          // <tr key={record._id}>
+          //   <td>{record.name || record.organisationName + " (ORG)"}</td>
+          //   <td>{record.email}</td>
+          //   <td>{record.phone}</td>
+          //   <td>{moment(record.createdAt).format("DD/MM/YYYY hh:mm A")}</td>
+          // </tr>
+          <div className="col-4">
+            <div className="card bg-info text-white" style={{ width: "18rem" }}>
               <div key={record._id} className="card-body">
-                <h5 className="card-title">{record.name}</h5>
-                <h6 className="card-subtitle mb-2 text-muted">{record.phone}</h6>
-                <h6 className="card-subtitle mb-2 text-muted">{record.email}</h6>
-                <p className="card-text">{record.bloodGroup}</p>
+                <h5 className="card-title">Name: {record.name}</h5>
+                <h6 className="card-subtitle mb-1 text-white">
+                  Phone: {record.phone}
+                </h6>
+                <h6 className="card-subtitle mb-1 text-white">
+                  Email: {record.email}
+                </h6>
+                <div className="d-flex flex-row justify-content-between">
+                  <h5>Blood Group: </h5>
+                  <p className="card-text text-danger fw-bold fs-5">
+                    {record.bloodGroup}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          ))}
+        ))}
       </div>
     </Layout>
   );
