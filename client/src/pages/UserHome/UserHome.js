@@ -46,7 +46,7 @@ const UserHome = () => {
                 </a>
               </li>
               <li>
-                <a href="#blog-section" className="nav__link">
+                <a href="#blog-posts" className="nav__link">
                   Blog
                 </a>
               </li>
@@ -261,8 +261,8 @@ const UserHome = () => {
         {/* ################# Blood Alternative Ends Here #######################-*/}
 
         <main>
-          {/* blog-banner section starts here */}
-          <section id="blog-banner-section" className="banner">
+          {/* =============================== blog-banner section starts here ============================ */}
+          <section id="blog-banner-section" className="banner__image2 banner">
             <div>
               <h1 className="banner__heading">Blood Donation Prccess</h1>
               <div className="banne__card">
@@ -313,108 +313,86 @@ const UserHome = () => {
               </div>
             </div>
           </section>
-          {/* blog-banner section ends here */}
-          {/* archieves section starts here */}
-          <section id="archieves" className="section-center">
-            <h2 className="section__heading archieves__heading">Archieves</h2>
-            <div className="archieves-container">
-              <ul className="archieves__lists">
-                <li className="archieves__list">
-                  <img
-                    className="archieves__image"
-                    src="Img (4).jpg"
-                    alt="image1"
-                  />
-                </li>
-                <li className="archieves__list">
-                  <img
-                    className="archieves__image"
-                    src="Img (2).jpg"
-                    alt="image2"
-                  />
-                </li>
-                <li className="archieves__list">
-                  <img
-                    className="archieves__image"
-                    src="Img (1).jpg"
-                    alt="image3"
-                  />
-                </li>
-                <li className="archieves__list">
-                  <img
-                    className="archieves__image"
-                    src="Img (3).jpg"
-                    alt="image4"
-                  />
-                </li>
-              </ul>
-            </div>
-          </section>
-          {/* archieves section ends here */}
-          {/* blog-posts section starts here */}
-          <section id="blog-posts" className="section-center">
-            <h2 className="section__heading">Blog Posts</h2>
+          {/* --------------------------- blog-banner section ends here --------------------------------------------- */}
+          {/* =================== blog-posts section starts here ======================= */}
+          <div id="blog-posts" className="section-center blog__main">
+            <h2 className="blog__heading">Blog Posts</h2>
             <div className="blog-posts">
               <div className="blog-post">
-                <aside className="blog-post__aside">
-                  <img className="img__center" src="Img (3).jpg" alt="image1" />
-                </aside>
-                <article className="blog-post__content">
-                  <h2 className="blog-post__heading">Blog 1</h2>
+                <div className="blog-post__img">
+                  <img
+                    className="blog__img"
+                    src="/assets/images/blog_pic1.png"
+                    alt="image1"
+                  />
+                </div>
+                <div className="blog-post__content">
                   <h3 className="blog-post__sub-heading">
-                    this is subtitle here
+                    Doctor is consulting patients
                   </h3>
                   <p className="blog-post__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam, possimus cupiditate maxime ex eum harum eos facere
-                    veniam. Nostrum maiores atque veniam odio delectus voluptas
-                    expedita voluptates beatae vitae mollitia.
+                    The clinical services are provided from 13 health facilities
+                    in 11 camps and two host communities. A total of 50,567
+                    people (camp settlements: 45,864 and host: 4,703) were
+                    reached through clinical services, Community-Based Health
+                    and First Aid (CBHFA) message dissemination and Psychosocial
+                    Support (PSS) at various health or community facilities.
+                  </p>
+                  <button className="btn blog-post__btn">Learn More</button>
+                </div>
+              </div>
+              <div className="blog-post">
+                <aside className="blog-post__aside">
+                  <img
+                    className="img__center"
+                    src="/assets/images/blog_pic2.png"
+                    alt="image1"
+                  />
+                </aside>
+                <article className="blog-post__content">
+                  <h3 className="blog-post__sub-heading">
+                    Conducting volunteer
+                  </h3>
+                  <p className="blog-post__description">
+                    Community-Based Psychosocial Support(CBPSS). Centerbased
+                    activities (1347 people, in Camps 13, 14, 17 and 19). Mental
+                    Health and Psychosocial Support (MHPSS) in Health Facilities
+                    (191 people in Camps 2E, 13, 12 and 15), 1,539 people were
+                    provided with mental health or psycho-social support in Camp
+                    17; 55 people were provided with mental health.
                   </p>
                   <button className="btn blog-post__btn">Learn More</button>
                 </article>
               </div>
               <div className="blog-post">
                 <aside className="blog-post__aside">
-                  <img className="img__center" src="Img (2).jpg" alt="image1" />
+                  <img
+                    className="img__center"
+                    src="/assets/images/blog_pic3.png"
+                    alt="image1"
+                  />
                 </aside>
                 <article className="blog-post__content">
-                  <h2 className="blog-post__heading">Blog 2</h2>
                   <h3 className="blog-post__sub-heading">
-                    this is subtitle here
+                    Workshop on the Multi-hazard Preparedness
                   </h3>
                   <p className="blog-post__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam, possimus cupiditate maxime ex eum harum eos facere
-                    veniam. Nostrum maiores atque veniam odio delectus voluptas
-                    expedita voluptates beatae vitae mollitia.
-                  </p>
-                  <button className="btn blog-post__btn">Learn More</button>
-                </article>
-              </div>
-              <div className="blog-post">
-                <aside className="blog-post__aside">
-                  <img className="img__center" src="Img (1).jpg" alt="image1" />
-                </aside>
-                <article className="blog-post__content">
-                  <h2 className="blog-post__heading">Blog 3</h2>
-                  <h3 className="blog-post__sub-heading">
-                    this is subtitle here
-                  </h3>
-                  <p className="blog-post__description">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Magnam, possimus cupiditate maxime ex eum harum eos facere
-                    veniam. Nostrum maiores atque veniam odio delectus voluptas
-                    expedita voluptates beatae vitae mollitia.
+                    76 Union Disaster Management Committee (UDMC) members
+                    including 65 males and 11 females from Ramu sub-district
+                    received inclusive DRM training envisioned to facilitate
+                    community-driven preparedness and response activities in
+                    Garjonia and Kachhapia unions. 164 Ward-level Disaster
+                    Management Committee (WDMC) 121 members do.
                   </p>
                   <button className="btn blog-post__btn">Learn More</button>
                 </article>
               </div>
             </div>
-          </section>
+          </div>
           {/* blog-posts section ends here */}
           {/* contact section starts here */}
           <section id="contract-section" className="section-center">
-            <h2 className="section__heading text-color">Contact Me</h2>
+            <h2 className="conct__ush">Contact Us</h2>
             <form>
               <div className="form-control">
                 <label htmlFor="name">Name</label>

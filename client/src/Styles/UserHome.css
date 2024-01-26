@@ -483,59 +483,37 @@ header{
 .banner__decription{
     font-size: 1.8rem;
 }
-.banner__image{
-    width: 55rem;
-    height: 55rem;
-    border: 0.3rem solid;
-}
-/* ====================================== banner section ends here ===================================== */
-
-
-/* archieves section starts here */
-#blog-banner-section{
+.banner__image2{
     background-image: url("../Images/donation-pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 10px;
 }
-.archieves-container{
+/* ====================================== banner section ends here ===================================== */
+
+
+/*------------------------------------- blog-posts section starts here --------------------------------*/
+
+.blog__heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.blog-posts{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2rem;
-    border-top: 0.1rem solid;
-    border-bottom: 0.1rem solid;
-}
-.archieves__lists{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-.archieves__image{
-    width: 100%;
-    height: 100%;
-    border-radius: 0.6rem ;
-    transition: var(--transition);
-}
-.archieves__image:hover{
-    transform: var(--scale);
-}
-/* archieves section ends here */
-
-/* blog-posts section starts here*/
-.blog-posts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
+    flex-direction: row;
+    gap: 40px;
 }
 .blog-post{
-    width: 70%;
+    /* width: 40%; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding-left: 1rem;
-    margin: 1rem 0;
+    padding-left: 5px;
+    margin: 10px 15px;
     transition: var(--transition);
     box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4 , -0.1rem -0.1rem 0.1rem #c4c4c4;
     border-radius: 1rem;
@@ -543,6 +521,10 @@ header{
 .blog-post:hover{
     transform: var(--scale);
 }
+.blog__main{
+    height: 98vh;
+}
+
 .blog-post__aside{
     height: 100%;
     flex: 1;
@@ -552,19 +534,21 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 1rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     flex: 2;
-    gap: 1rem;
+    gap: 10px;
 }
 .blog-post__heading{
-    margin-bottom: 1rem;
-    font-size: 2.5rem
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: bolder;
 }
 .blog-post__sub-heading{
-    font-size: 2rem
+    font-size: 25px;
+    font-weight: bold;
 }
 .blog-post__description{
-    font-size: 1.6rem;
+    font-size: 15px;
     text-align: justify;
 }
 .blog-post__btn{
@@ -573,7 +557,7 @@ header{
 
 /* blog-posts section ends here */
 
-/* contact section starts here*/
+/* =========================================== contact section starts here ========================================== */
 form{
     box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4 , -0.1rem -0.1rem 0.1rem #c4c4c4;
     padding: 1rem;
@@ -584,28 +568,34 @@ form{
 }
 #contract-section{
     background-color: #4c4c4c;
-    min-height: 95vh;
+    min-height: 80vh;
+}
+.conct__ush{
+    font-size: 100px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 .form-control{
-    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    flex-shrink: 1;
     align-items: center;
 }
 .form-control label{
-    font-size: 1.6rem;
+    font-size: 15px;
     flex: 0.3;
 }
 .form-control >input, textarea{
     flex: 0.7;
-    width: 40rem;
+    width: 500px;
     padding: 2rem 1rem;
     border: none;
     border-radius: 0.6rem;
 }
 textarea{
     resize: none;
-    height: 12vh;
+    height: 10vh;
 }
 .from-btn-field{
     display: flex;
@@ -620,7 +610,7 @@ textarea{
 .footer{
     background-color: black;
     color: white;
-    min-height: 5vh;
+    height: 2vh;
 
     display: flex;
     justify-content: space-between;
@@ -633,7 +623,7 @@ textarea{
     display: flex;
     align-items: center;
     gap: 2rem;
-    font-size: 2rem;
+    font-size: 20px;
 }
 .copyright__text{
     font-size: 1.5rem;
