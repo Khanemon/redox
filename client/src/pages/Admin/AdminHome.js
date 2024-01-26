@@ -13,33 +13,44 @@ const AdminHome = () => {
           </h1>
           <h3>Manage Red Oxygen</h3>
           <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            explicabo animi blanditiis incidunt dicta quia, quibusdam facere
-            corporis! Dolores, reprehenderit cum sed repellat laudantium
-            architecto natus est nostrum accusamus, odio aspernatur minima
-            fugiat quam molestiae nisi. Temporibus impedit dolorem quia.
-            Distinctio modi non excepturi illo odio voluptatum quae nostrum a
-            temporibus sequi! Explicabo, quasi consequatur ad qui quos labore
-            distinctio voluptates alias nostrum ab dicta aspernatur molestias
-            adipisci quibusdam error ipsa. Totam, tenetur dolores eaque tempora
-            officiis deserunt assumenda? Rerum nemo est nihil laudantium
-            necessitatibus. Possimus, voluptatem voluptates blanditiis quas
-            aspernatur, quam, quaerat minus maiores ipsam sint perferendis
-            dolor. Dignissimos voluptatem doloribus sint in quis omnis, atque
-            neque praesentium voluptatum suscipit. Quas esse, accusantium maxime
-            obcaecati iure officiis aperiam minus alias quod cum quos qui
-            voluptatibus, numquam, ad id dolore odit! Minima laudantium sunt,
-            explicabo nesciunt quos voluptatibus qui libero eligendi praesentium
-            debitis obcaecati similique assumenda nobis labore totam dolore
-            perferendis adipisci fugiat quibusdam tempore doloremque voluptatum
-            accusantium. Accusamus, incidunt sequi. Esse sunt officia fuga,
-            officiis saepe tempora repellat suscipit aliquid cupiditate
-            perferendis, asperiores architecto molestiae rem iste eaque
-            molestias reiciendis. Laborum modi asperiores, reprehenderit
-            assumenda numquam, vitae exercitationem illum nesciunt, dolorum
-            deleniti accusamus consequatur id. Necessitatibus dolore ad fugit?
-          </p>
+          <div>
+            <h2>Dear Blood Donation Platform Administrators</h2>
+            <p>
+              Welcome to the heart of our blood donation community! As stewards
+              of this vital platform, you play a pivotal role in fostering a
+              culture of compassion, collaboration, and impact. Your dedication
+              to efficiently coordinating blood donors with recipients, managing
+              our real-time blood inventory, and engaging donors through
+              streamlined registration and personalized communication is
+              commendable. Our commitment to secure and compliant data
+              management reflects our utmost respect for donor privacy and
+              regulatory standards. By ensuring the highest standards of data
+              security, you are building and maintaining trust within our
+              dynamic and growing donor community.
+            </p>
+            <p>
+              As administrators, your role extends beyond the digital realm. By
+              driving awareness campaigns, educational initiatives, and actively
+              engaging with local organizations, healthcare providers, and
+              volunteers, you contribute to the broader mission of saving lives
+              through regular blood donation. The emergency response readiness
+              you bring to the platform is crucial.
+            </p>
+            <p>
+              This platform's success is a testament to your dedication. We
+              encourage you to leverage data analytics tools for insightful
+              decision-making and to continuously enhance the user experience by
+              incorporating user feedback and embracing a user-centered design
+              approach. Your role in ensuring regulatory compliance,
+              scalability, accessibility, sustainability, and long-term
+              viability is instrumental. By implementing a comprehensive
+              maintenance plan and exploring revenue generation options, you
+              contribute to the lasting impact and growth of our blood donation
+              platform.
+            </p>{" "}
+            <h3> With gratitude,</h3>
+            <h2>RED OXYGEN Administration Team</h2>
+          </div>
         </div>
       </div>
     </Layout>

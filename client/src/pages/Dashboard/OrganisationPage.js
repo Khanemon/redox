@@ -41,14 +41,22 @@ const OrganisationPage = () => {
           <div className="col-4">
             <div
               className="card text-white"
-              style={{ width: "18rem", backgroundColor: "#20c997" }}
+              style={{ width: "18rem", backgroundColor: "#27abcc" }}
             >
               <div key={record._id} className="card-body">
-                <h5 className="card-title">{record.organisationName}</h5>
-                <h6 className="card-subtitle mb-2 text-white">
-                  {record.email}
-                </h6>
-                <p className="card-text text-white">{record.phone}</p>
+                <a className="text-decoration-none" href={record.website}>
+                  <h5 className="card-title text-white">
+                    {record.organisationName}
+                  </h5>
+                </a>
+                <p className="card-subtitle mb-2 text-white">{record.email}</p>
+                <p className="card-text">{record.phone}</p>
+                <a
+                  className="text-black text-decoration-none fw-bold"
+                  href={record.website}
+                >
+                  {record.website}
+                </a>
               </div>
             </div>
           </div>
